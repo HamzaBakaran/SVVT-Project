@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+
+email:
+  mailgun:
+    domain: ${MAILGUN_DOMAIN}
+    from-email: ${MAILGUN_FROM_EMAIL}
+    username: ${MAILGUN_USERNAME}
+    password: ${MAILGUN_PASSWORD}
